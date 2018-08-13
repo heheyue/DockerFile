@@ -1,0 +1,6 @@
+[160.102]
+name=160.102
+#baseurl=file:///usr/local/src/Install_Im/packs/yumrepo
+baseurl=http://172.16.160.102:8080/yumrepo
+gpgcheck=0
+enabled=1
