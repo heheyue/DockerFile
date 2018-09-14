@@ -261,12 +261,13 @@ function Sed_Im_conf(){
 
 #启动IM
 function Start_Service(){
-    /home/eimserver/program/bin/pstart
+    cd /home/eimserver/program/bin
+    ./pstart
 }
 #守护进程
 function Defender(){
     while [[ 1 ]]; do
-        ps aux | grep '/home/eimserver/program/bin/pstart' | grep -v grep | grep -v start_im.sh >  /dev/null
+        ps aux | grep './pstart' | grep -v grep | grep -v start_im.sh >  /dev/null
         if [ $? -ne 0 ]
             then
             exit
