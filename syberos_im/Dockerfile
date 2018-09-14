@@ -9,6 +9,10 @@ RUN mkdir -p /home/eimserver && mkdir -p /home/uploads/syberos_im_uploads
 ADD ./start_im.sh /home/
 #RUN mkdir -p /home/eimserver/program/log && mkdir -p /home/eimserver/program/file && mkdir -p /home/eimserver/program/icon1 && mkdir -p /home/eimserver/program/icon2 && chmod 777 -R /home/eimserver/
 EXPOSE 8051/tcp
+EXPOSE 8061/tcp
+EXPOSE 8050/tcp
+EXPOSE 8064/tcp
+EXPOSE 8020/tcp
 EXPOSE 12000/udp
 EXPOSE 12001/udp
 EXPOSE 12002/udp
